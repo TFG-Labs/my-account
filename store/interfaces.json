@@ -14,7 +14,7 @@
     "component": "DefaultPage"
   },
   "my-account-pages": {
-    "allowed": ["my-orders", "my-cards", "my-account-page"]
+    "allowed": ["my-cards", "my-account-page"]
   },
   "my-account-page": {
     "component": "*",
@@ -24,7 +24,6 @@
     "allowed": [
       "my-profile-link",
       "my-addresses-link",
-      "my-orders-link",
       "my-cards-link",
       "my-account-link"
     ]
