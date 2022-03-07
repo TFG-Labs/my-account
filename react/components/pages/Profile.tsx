@@ -12,7 +12,7 @@ import NewsletterBox from '../Profile/NewsletterBox'
 
 export const headerConfig = {
   titleId: 'vtex.store-messages@0.x::pages.profile',
-  hideBackButton: true,
+  hideBackButton: false,
 }
 
 class ProfileContainer extends Component<Props> {
@@ -39,11 +39,11 @@ class ProfileContainer extends Component<Props> {
     const { showToast } = this.state
 
     return (
-      <main className="flex flex-column-s flex-row-ns">
-        <div className="w-60-ns w-100-s">
+      <main className="flex flex-column-s">
+        <div className="w-100-ns w-100-s">
           <ProfileBox profile={profile} onEditClick={this.handleGoToEdit} />
         </div>
-        <div className="w-40-ns w-100-s">
+        <div className="w-100-ns w-100-s">
           <NewsletterBox userEmail={profile.email} />
         </div>
         {showToast && (

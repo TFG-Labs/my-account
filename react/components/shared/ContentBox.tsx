@@ -21,7 +21,7 @@ const ContentBox: FunctionComponent<Props> = ({
   const flexClass = shouldAllowGrowing ? 'flex-auto' : 'flex-none'
 
   return (
-    <div className={`pb5 pr5-ns ${flexClass} ${widthClass}`}>
+    <div className={`pb3 ${flexClass} ${widthClass}`}>
       <article
         className={`ba bw1 b--muted-4 br2 flex flex-column justify-between ${cssHandles.boxContainer}`}
       >

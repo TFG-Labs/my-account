@@ -71,7 +71,7 @@ class Menu extends Component<Props, { isModalOpen: boolean }> {
           <Fragment>
             <div
               className={`
-                    ${cssHandles.menuLink}
+                    ${cssHandles.menuLink} ${cssHandles.menuLink}-logout
                     f6 no-underline db hover-near-black pv5 mv3 pl5 bl bw2 nowrap c-muted-1 b--transparent pointer
                   `}
               onClick={this.handleModalToggle}

@@ -65,7 +65,7 @@ class AppRouter extends Component<Props> {
     ]
 
     return (
-      <div className="w-100 mw9 pv7-m pv9-l flex">
+      <div className="w-100 mw9 pv7-m pv9-l flex vtex-account-content">
         <ExtensionPoint
           id="my-account-defaultPage"
           onSetDefaultPath={this.handleDefaultPath}

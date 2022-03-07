@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component , Fragment} from 'react'
 import { FormattedMessage } from 'react-intl'
 import { graphql } from 'react-apollo'
 import { compose } from 'recompose'
@@ -93,7 +93,7 @@ class ProfileFormBox extends Component<InnerProps & OutterProps, State> {
 
     return (
       <div className={cssHandles.profileFormBoxContainer}>
-        <ContentBox shouldAllowGrowing maxWidthStep={6}>
+        <ContentBox shouldAllowGrowing>
           <ProfileRules country={runtime.culture.country} shouldUseIOFetching>
             <ProfileContainer
               defaultProfile={profile}
@@ -111,6 +111,12 @@ class ProfileFormBox extends Component<InnerProps & OutterProps, State> {
                 registerValidator={this.registerValidator}
                 registerSubmitter={this.registerSubmitter}
               />
+              <Fragment> 
+                <Button size="small" variation="secondary" href="/account#/profile">
+                  <FormattedMessage id="vtex.store-messages@0.x::logoutModal.cancel" />
+                </Button>
+              </Fragment>
+              
             </ProfileContainer>
           </ProfileRules>
         </ContentBox>
